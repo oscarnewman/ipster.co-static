@@ -540,6 +540,7 @@ section.photo-section {
           font-size: 22px;
           padding: 10px;
           width: 100%;
+          text-align: center;
           display: -webkit-box;
           display: -webkit-flex;
           display: -ms-flexbox;
