@@ -400,7 +400,13 @@ hr {
 nav {
   height: 70px;
   background-image: -webkit-linear-gradient(#F2E71D, #F0E50B);
-  background-image: linear-gradient(#F2E71D, #F0E50B); }
+  background-image: linear-gradient(#F2E71D, #F0E50B);
+  *zoom: 1; }
+  nav:before, nav:after {
+    content: '';
+    display: table; }
+  nav:after {
+    clear: both; }
   nav section {
     display: inline-block; }
     nav section.nav-left {
@@ -435,9 +441,42 @@ nav {
     padding: 0 30px; }
     nav a.facebook:hover, nav a.facebook:active, nav a.facebook:focus {
       background: #3B5998; }
+  @media screen and (max-width: 600px) {
+    nav .items {
+      display: block;
+      width: 100vw;
+      background: #dacf0d;
+      margin-bottom: 20px;
+      border-top: solid 1px #c2b80b;
+      *zoom: 1; }
+      nav .items:before, nav .items:after {
+        content: '';
+        display: table; }
+      nav .items:after {
+        clear: both; }
+      nav .items a {
+        line-height: 50px;
+        *zoom: 1;
+        float: left;
+        clear: none;
+        text-align: inherit;
+        width: 33.3333333333%;
+        margin-left: 0%;
+        margin-right: 0%;
+        text-align: center; }
+        nav .items a:before, nav .items a:after {
+          content: '';
+          display: table; }
+        nav .items a:after {
+          clear: both; }
+    nav a.facebook {
+      position: absolute;
+      top: 0;
+      right: 0; } }
 
 section.photo-section {
-  padding: 0 30px; }
+  padding: 0 30px;
+  display: block; }
   section.photo-section h1 {
     font-weight: 300;
     text-transform: uppercase;
@@ -529,7 +568,8 @@ section.photo-section {
       section.photo-section .posts li h2 {
         font-size: 16px;
         font-weight: 400;
-        padding: 5px 10px 0 10px; }
+        padding: 0 10px;
+        display: block; }
       section.photo-section .posts li img {
         width: 100%;
         height: auto;

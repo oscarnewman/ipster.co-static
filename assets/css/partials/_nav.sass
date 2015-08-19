@@ -1,6 +1,7 @@
 nav
     height: $nav-height
     +background-image(linear-gradient($nav-color-start, $nav-color-end))
+    +cf
 
     section
         display: inline-block
@@ -46,4 +47,24 @@ nav
 
         &:hover, &:active, &:focus
             background: #3B5998
+
+
+    @media screen and (max-width: 600px)
+        .items
+            display: block
+            width: 100vw
+            background: darken($brand-color, 5%)
+            margin-bottom: 20px
+            border-top: solid 1px darken($brand-color, 10%)
+            +cf
+
+            a
+                line-height: 50px
+                +span(1/3)
+                text-align: center
+
+        a.facebook
+            position: absolute
+            top: 0
+            right: 0
 
