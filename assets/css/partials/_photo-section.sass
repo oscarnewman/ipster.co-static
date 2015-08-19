@@ -3,6 +3,9 @@ section.photo-section
     padding: 0 30px
     display: block
 
+    @media (max-width: 768px)
+        padding: 0 15px
+
     h1
         font-weight: 300
         text-transform: uppercase
@@ -15,7 +18,7 @@ section.photo-section
     .posts
         list-style-type: none
         padding: 0
-        margin: 0 -5px
+        margin: 0 -10px
         display: flex
         flex-direction: row
         +cf
@@ -86,4 +89,5 @@ section.photo-section
                 +col(.45)
                 margin: 2.5%
                 &.more
-                    +col(1/2)
+                    +col(.45)
+                    margin: 2.5%
