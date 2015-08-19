@@ -487,6 +487,7 @@ section.photo-section {
   section.photo-section .posts {
     list-style-type: none;
     padding: 0;
+    margin: 0 -5px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
