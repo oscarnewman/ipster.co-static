@@ -403,6 +403,8 @@ nav {
   background-image: linear-gradient(#F2E71D, #F0E50B); }
   nav section {
     display: inline-block; }
+    nav section.nav-left {
+      float: left; }
     nav section.nav-right {
       float: right; }
   nav a {
