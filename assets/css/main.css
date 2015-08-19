@@ -415,6 +415,7 @@ nav {
     font-weight: bold;
     display: inline-block;
     vertical-align: middle;
+    text-transform: uppercase;
     border-right: solid rgba(173, 173, 173, 0.3) 1px; }
     nav a:hover, nav a:active, nav a:focus {
       color: rgba(0, 0, 0, 0.8); }
