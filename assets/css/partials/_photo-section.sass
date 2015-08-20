@@ -46,7 +46,7 @@ section.photo-section
                             +transition(opacity, 0.2s)
 
                 img.zoom
-                    +transform(scale(1.3))
+                    +transform(scale(1))
                     +transition(.3s)
 
             &.more
@@ -125,6 +125,10 @@ section.photo-section
                 padding: 0
                 display: block
                 +transition(.3s)
+
+                &.zoom
+                    +transform(scale(1.3))
+
 
 
 
