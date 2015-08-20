@@ -639,6 +639,11 @@ section.photo-section {
           display: table; }
         section.photo-section.hot .posts li:after {
           clear: both; }
+        section.photo-section.hot .posts li:nth-child(4n) {
+          margin-right: 2%;
+          float: left; }
+        section.photo-section.hot .posts li:nth-child(4n + 1) {
+          clear: none; }
         section.photo-section.hot .posts li:nth-child(3n) {
           margin-right: 0%;
           float: right; }
