@@ -29,6 +29,9 @@ section.photo-section
             border-radius: 5px
             overflow: hidden
             margin: 0 5px
+            align-self: flex-start
+
+            display: flex
 
             &:hover h2
                 color: darken($brand-secondary, 5%)
@@ -82,7 +85,12 @@ section.photo-section
 
 
             a
-                display: block
+                display: flex
+                flex-direction: column
+                align-items: bottom
+                align-self: stretch
+
+                position: relative
 
             h2
                 font:
@@ -94,8 +102,10 @@ section.photo-section
             .image-wrap
                 width: 100%
                 height: auto
-                overflow: hidden
                 position: relative
+                bottom: 0
+                overflow: hidden
+
 
                 .overlay
                     position: absolute
