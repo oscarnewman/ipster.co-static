@@ -1,4 +1,5 @@
 section.photo-section
+    +center(2000px)
     padding: 0 30px
     display: block
 
@@ -82,6 +83,14 @@ section.photo-section
                 display: block
 
     &.hot .posts
+
+        @media (max-width: 1000px)
+            padding: 0 10px
+            flex-flow: row wrap
+            justify-content: center
+            li
+                +col(.24, $gutter: 2, $cycle: 4)
+                margin-bottom: 20px
 
         @media (max-width: 600px)
             padding: 0 10px
